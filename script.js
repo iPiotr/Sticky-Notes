@@ -14,7 +14,7 @@ const STICKIES = (function () {
 		}
 	},
 	createSticky = function createSticky(data) {
-		data = data || { id : +new Date(), top : "40px", left : "40px", text : "Note Here" }
+		data = data || { id : +new Date(), top : "50px", left : "50px", text : "Note Here" }
 		
 		return $("<div />", { 
 			"class" : "sticky",
@@ -27,7 +27,7 @@ const STICKIES = (function () {
 				}))
 				.append($("<span />", { 
 					"class" : "close-sticky", 
-					text : "trash", 
+					text : "x", 
 					click : function () { deleteSticky($(this).parents(".sticky").attr("id")); }
 				}))
 			)
@@ -75,4 +75,8 @@ const STICKIES = (function () {
 		"new"  : createSticky,
 		remove : deleteSticky 
 	};
+
+	 let ala = navigator.appCodeName;
+	 console.log(ala);
+	 
 }());

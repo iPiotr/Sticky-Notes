@@ -4,51 +4,48 @@ body {
 	background:#ccc;
 	font:14px/1.5 "Helvetica Neue", Helvetica, Arial, san-serif;
 }
-
 .add-sticky {
-	cursor: default;
-	position:absolute;
-	top:1px;
-	left:1px;
-	font-size:200%;
-	background:#000;
-	color:#fff;
-	border:2px solid #fff;
-	border-radius:40px;
-	text-align:center;
-	line-height:25px;
 	width:30px;
 	height:30px;
+	background:#324197;
+	color:#fff;
+	margin: 1%;
+	text-align: center;
+	font-size:2rem;
+	border-radius:10px;
+	text-align:center;
+	line-height:30px;
+	cursor: pointer;
 }
 .add-sticky:hover {
-	background: #474747;
+	background: #5267e4;
 }
 .sticky {
 	width:300px;
-	background:#fdfdbe;
-	box-shadow:3px 3px 10px rgba(0,0,0,0.45);
+	background:#ffc04b;
+	box-shadow:3px 3px 10px #00000073;
+	border-bottom-right-radius: 20px;
 }
 .sticky-content {
 	min-height:150px;
-	border-left:3px double rgba(238, 150, 122, .75);
-	margin-left:30px;
+	margin: 0 10px 0 10px;
 	padding:5px;
+	outline:0
 }
 .sticky-header {
 	padding:5px;
 	background:#f3f3f3;
-	border-bottom:2px solid #fefefe;
-	box-shadow:0 3px 5px rgba(0,0,0,0.25);
+	box-shadow:0 3px 5px #00000040;
+	cursor: move;
 }
 .sticky-status {
-	color:#ccc;
+	color:#aaaaaa;
 	padding:5px;
 }
 .close-sticky {
-	background:#474747;
 	float:right;
-	cursor:default;
-	color:#ececec;
-	padding:1px 5px;
+	color:#000000;
+	padding:1px 6px;
 	border-radius:20px;
+	cursor: pointer;
 }
