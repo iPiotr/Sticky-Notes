@@ -75,8 +75,5 @@ const STICKIES = (function () {
 		"new"  : createSticky,
 		remove : deleteSticky 
 	};
-
-	 let ala = navigator.appCodeName;
-	 console.log(ala);
-	 
+		 
 }());
