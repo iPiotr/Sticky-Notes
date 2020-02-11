@@ -2,23 +2,23 @@ body {
 	margin:0;
 	padding:0;
 	background:#ccc;
-	font:14px/1.5 "Helvetica Neue", Helvetica, Arial, san-serif;
+	font:14px/1.5 "Helvetica Neue", Helvetica, Arial;
 }
 .add-sticky {
-	width:30px;
-	height:30px;
-	background:#324197;
+	width:40px;
+	height:40px;
+	background:#3957ff;
 	color:#fff;
-	margin: 1%;
+	margin: 1.4%;
 	text-align: center;
-	font-size:2rem;
+	font-size:2.5rem;
 	border-radius:10px;
 	text-align:center;
-	line-height:30px;
+	line-height:40px;
 	cursor: pointer;
 }
 .add-sticky:hover {
-	background: #5267e4;
+	background: #484d68;
 }
 .sticky {
 	width:300px;
