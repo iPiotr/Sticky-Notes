@@ -65,7 +65,7 @@ deleteSticky = function deleteSticky(id) {
 	$("#" + id).fadeOut(200, function () { $(this).remove(); });
 },
 
-//save note to localStorage
+//save note to localStorage & saved marker
 saveSticky = function saveSticky() {
 	const that = $(this),  sticky = (that.hasClass("sticky-status") || that.hasClass("sticky-content")) ? that.parents('div.sticky'): that,
 			obj = {
