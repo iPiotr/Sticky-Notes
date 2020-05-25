@@ -46,6 +46,7 @@ createSticky = function createSticky(data) {
 	.draggable({ 
 		handle : "div.sticky-header", 
 		stack : ".sticky",
+		containment: 'body',
 		start : markUnsaved,
 		stop  : saveSticky	
 		})
@@ -73,13 +74,13 @@ saveSticky = function saveSticky() {
 				left: sticky.css("left"),
 				text: sticky.children(".sticky-content").html()				}
 	localStorage.setItem("sticky-" + obj.id, JSON.stringify(obj));	
-	sticky.find(".sticky-status").text("saved");
+	sticky.find(".sticky-status").text("✓");
 },
 
 //unsaved note marker
 markUnsaved = function markUnsaved() {
 	const that = $(this), sticky = that.hasClass("sticky-content") ? that.parents("div.sticky") : that;
-	sticky.find(".sticky-status").text("unsaved");
+	sticky.find(".sticky-status").text("...");
 }
 
 return {
