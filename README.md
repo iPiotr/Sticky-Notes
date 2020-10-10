@@ -1,4 +1,4 @@
-# Application in pure js  
+# Application in jQuery
 
 Sticky notes application.  
 We can create our own notes and move them in any place.  
